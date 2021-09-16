@@ -5,15 +5,28 @@ $bg-color: #c7e8f7;
     background-color: $bg-color;
     margin-bottom: 0.5rem;
     padding: 0.5rem 1rem;
-    max-width: 500px;
     border-radius: 10px;
     box-shadow: #091e4240 0px 1px 0px 0px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    width: 100%;
 }
 
 .card h2{
     font-family: $font-stack;
 }
 
+.card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.card-img{
+    width: 50%;
+}
+.page-button{
+    padding-bottom: 3em;
+}

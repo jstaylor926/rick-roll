@@ -2,7 +2,7 @@ import * as React from 'react';
 import { useQuery } from '@apollo/client';
 import { GET_CHARACTERS } from '../utils/getCharacters';
 import Card from './Card';
-
+import '../assets/scss/card.scss';
 
 interface CardListProps {
     name: string;
@@ -18,8 +18,10 @@ interface CardListProps {
 
 
 const CardList = () => {
+
     const [page, setPage] = React.useState(1);
-    const { loading, error, data} = useQuery(GET_CHARACTERS, {variables: {page: 3}});
+
+    const { loading, error, data} = useQuery(GET_CHARACTERS, {variables: {page: page}});
     if(loading) {
         return <p>Loading...</p>
     }
@@ -27,11 +29,13 @@ const CardList = () => {
         return <p>Error: </p>
     }
 
-    console.log(data.characters.info.next)
     return(
-        <div>
+        <div  className="card-container">
+            <button onClick={() => setPage(page + 1)} className="page-btn">Next</button>
             {data.characters.results.map((character: CardListProps) => {
                 return(
+            <section key={character.id} style={{marginTop: '15px'}}>
+
                     <Card 
                     name={character.name}
                     id={character.id}
@@ -42,9 +46,12 @@ const CardList = () => {
                     status={character.status}
                     created={character.created}
                    />
+    </section>
+
                 )
             })}
-     
+            <button onClick={() => setPage(page + 1)} className="page-btn">Next</button>
+
         </div>
     );
 }

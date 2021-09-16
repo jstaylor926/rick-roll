@@ -15,7 +15,6 @@ type CardProps = {
 const Card = ({name, id, species, image, type, gender, status, created}: CardProps) => {
     return(
         <div className="card" id={id}>
-            <h2>{name}</h2>
             <section className="card-img">
                 <img src={image} alt="" />
             </section>
