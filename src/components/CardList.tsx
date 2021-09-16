@@ -19,12 +19,17 @@ const CardList = () => {
 
     return(
         <div>
-           <Card 
-            name={data.characters.results[0].name}
-            id={data.characters.results[0].id}
-            species={data.characters.results[0].species}
-            image={data.characters.results[0].image}
-           />
+            {data.characters.results.map((character: { name: string; id: any; species: string; image: string; }) => {
+                return(
+                    <Card 
+                    name={character.name}
+                    id={character.id}
+                    species={character.species}
+                    image={character.image}
+                   />
+                )
+            })}
+     
         </div>
     );
 }
