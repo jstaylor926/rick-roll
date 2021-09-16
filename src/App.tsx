@@ -1,6 +1,6 @@
 import * as React from 'react';
 import CardList from './components/CardList';
-
+import './assets/scss/main.scss'
 
 export default function App() {
   return(

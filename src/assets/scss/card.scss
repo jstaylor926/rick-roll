@@ -1,9 +1,19 @@
+$font-stack: Helvetica, sans-serif;
+$bg-color: #c7e8f7;
+
 .card {
-    background-color: #fff;
-    cursor: pointer;
+    background-color: $bg-color;
     margin-bottom: 0.5rem;
     padding: 0.5rem 1rem;
-    max-width: 300px;
-    border-radius: 3px;
+    max-width: 500px;
+    border-radius: 10px;
     box-shadow: #091e4240 0px 1px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.card h2{
+    font-family: $font-stack;
+}
+
