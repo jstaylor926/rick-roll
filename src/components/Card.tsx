@@ -1,38 +1,38 @@
-import * as React from 'react';
-import '../assets/scss/card.scss';
+import * as React from "react";
+import "../assets/scss/card.scss";
 
 type CardProps = {
-    name: string;
-    id: any;
-    species: string;
-    image: string;
-    type: string;
-    gender: string;
-    status: string;
-    created: string;
-}
+  name: string;
+  id: any;
+  species: string;
+  image: string;
+  gender: string;
+  status: string;
+};
 
-const Card = ({name, id, species, image, type, gender, status, created}: CardProps) => {
-    return(
-        <div className="card" id={id}>
-            <section className="card-img">
-                <img src={image} alt="" />
-            </section>
-            <div className="card-bio">
-                <h4>Bio</h4>
-                <section>
-                <span><p>Name: {name}</p></span>
-                <span><p>Species: {species}</p></span>
-                <span><p>Type: {type}</p></span>
-                </section>
-                <section>
-                <span><p>Gender: {gender}</p></span>
-                <span><p>Status: {status}</p></span>
-                <span><p>Created: {created}</p></span>
-                </section>
-            </div>
-        </div>
-    )
-}
+const Card = ({ name, id, species, image, gender, status }: CardProps) => {
+  return (
+    <div className="card" id={id}>
+      <img src={image} alt="" className="card-img" />
+      <div className="card-bio">
+        <h4>Bio</h4>
+
+        <span>
+          <p>Name: {name}</p>
+        </span>
+        <span>
+          <p>Species: {species}</p>
+        </span>
+
+        <span>
+          <p>Gender: {gender}</p>
+        </span>
+        <span>
+          <p>Status: {status}</p>
+        </span>
+      </div>
+    </div>
+  );
+};
 
 export default Card;

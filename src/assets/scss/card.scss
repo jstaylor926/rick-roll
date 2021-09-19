@@ -1,32 +1,44 @@
 $font-stack: Helvetica, sans-serif;
 $bg-color: #c7e8f7;
 
-.card {
-    background-color: $bg-color;
-    margin-bottom: 0.5rem;
-    padding: 0.5rem 1rem;
-    border-radius: 10px;
-    box-shadow: #091e4240 0px 1px 0px 0px;
+.card-container{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card {
+    border: 3px solid #fff;
+    border-radius: 10px;
+    background-color: #fff;
+
+}
+
+.card-img {
+    height: 80%;
     width: 100%;
 }
 
-.card h2{
-    font-family: $font-stack;
+.card-bio {
+    background-color: #fff;
+
 }
 
-.card-container{
+.btn-container {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 50%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px 10px 10px;
+
 }
 
-.card-img{
-    width: 50%;
-}
-.page-button{
-    padding-bottom: 3em;
+.page-btn {
+    width: 30em;
+    height: 5em;
+    background-color: brown;
+    color: #fff;
+    font-size: medium;
 }

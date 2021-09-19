@@ -1,8 +1,9 @@
-.app {
-    align-items: center;
+.App{
+    background-color: #d5f4f8;
     display: flex;
     flex-direction: column;
-    height: 100%;
-    padding: 20px;
-    width: 100%;
+}
+
+.App h3 {
+    text-align: center;
 }
