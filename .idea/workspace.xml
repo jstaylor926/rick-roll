@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a8bb9694-8141-4ef3-9124-5d66e04bc2ef" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Timeline/ABItem.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Timeline/ABTimeline.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/rollType.ts" afterDir="false" />
+    <list default="true" id="a8bb9694-8141-4ef3-9124-5d66e04bc2ef" name="Changes" comment="timeline components">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Timeline/TimelineContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Timeline/TimelineContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Timeline/ABItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Timeline/ABItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Timeline/ABTimeline.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Timeline/ABTimeline.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Timeline/rickResults.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Timeline/rickResults.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/getEpisodes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/getEpisodes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +33,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="4" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -64,8 +67,17 @@
       <updated>1631814791223</updated>
       <workItem from="1631814793383" duration="114000" />
       <workItem from="1631829898705" duration="43000" />
-      <workItem from="1638922891570" duration="1144000" />
+      <workItem from="1638922891570" duration="1207000" />
+      <workItem from="1638984248063" duration="2330000" />
     </task>
+    <task id="LOCAL-00001" summary="timeline components">
+      <created>1638971118432</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1638971118432</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -81,5 +93,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="timeline components" />
+    <option name="LAST_COMMIT_MESSAGE" value="timeline components" />
   </component>
 </project>
