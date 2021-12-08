@@ -1,11 +1,12 @@
 import * as React from 'react';
+import Timeline from '@mui/lab/Timeline';
 
 
 const TimelineContainer: React.FC = ({children}) => {
     return (
-        <div>
+        <Timeline position="alternate">
             {children}
-        </div>
+        </Timeline>
     )
 }
 
